@@ -1,6 +1,7 @@
 .hero {
   height: 600px;
   padding-top: 200px;
+
   background-color: var(--accent-background-color);
   background-image: linear-gradient(
       0deg,
@@ -11,11 +12,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   text-align: center;
 }
+
 .hero__headline {
   @include fonts(44px, 60px, 0.06em, var(--third-text-color), 900);
   text-transform: uppercase;
+
   width: 696px;
-  margin: 0 auto 30px auto;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }

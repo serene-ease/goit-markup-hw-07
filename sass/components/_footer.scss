@@ -6,10 +6,6 @@
 .footer__main-box {
   display: flex;
 }
-.footer__headline {
-  @include fonts(14px, 16px, $col: var(--third-text-color), $fw: 700);
-}
-.footer__second-box,
 .footer__third-box {
   position: relative;
   display: flex;
@@ -23,7 +19,60 @@
   margin-left: auto;
   justify-self: flex-end;
 }
+.footer .soc-box {
+  color: #fff;
+}
+.footer__headline {
+  @include fonts(14px, 16px, $col: var(--third-text-color), $fw: 700);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 .adress__link {
   @include fonts(14px, 24px, $col: rgba(255, 255, 255, 0.6));
   font-style: normal;
+  text-decoration: none;
+}
+.adress__item:not(:last-child) {
+  margin-top: 9px;
+}
+.footer__logo {
+  color: var(--third-text-color);
+}
+.form-f__email {
+  @include fonts(16px, 20px, 0.03em, var(--third-text-color));
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  display: inline-flex;
+
+  background-color: var(--accent-background-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.form__join .button {
+  display: inline-flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.form__join .button::after {
+  content: url("../../images/svg/telegram.svg");
+
+  background-image: url("../../images/svg/telegram.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  fill: currentColor;
+  outline: cyan solid 2px;
+
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
 }

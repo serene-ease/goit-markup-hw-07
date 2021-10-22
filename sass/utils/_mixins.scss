@@ -1,5 +1,5 @@
 @mixin fonts($fs, $lh, $ls: 0.03em, $col: var(--primary-text-color), $fw: 400) {
-  font-style: $fs;
+  font-size: $fs;
   line-height: ($lh / $fs);
   letter-spacing: $ls;
   color: $col;

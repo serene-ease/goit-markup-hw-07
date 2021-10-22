@@ -15,12 +15,6 @@
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
-.client__link:not(:first-child) {
+.clients__item:not(:first-child) {
   margin-left: 30px;
-}
-.client__link:hover,
-.client__link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-  outline: var(--accent-color);
 }
