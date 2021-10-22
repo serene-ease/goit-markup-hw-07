@@ -1,0 +1,26 @@
+.clients {
+  padding-top: var(--margin-between-section);
+  padding-bottom: var(--margin-between-section);
+  display: flex;
+}
+.clients__list {
+  display: flex;
+}
+.client__link {
+  width: 170px;
+  height: 92px;
+
+  display: flex;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+.client__link:not(:first-child) {
+  margin-left: 30px;
+}
+.client__link:hover,
+.client__link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  outline: var(--accent-color);
+}

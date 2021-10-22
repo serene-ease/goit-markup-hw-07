@@ -1,0 +1,53 @@
+.features {
+  padding-top: var(--margin-between-section);
+  padding-bottom: var(--margin-between-section);
+}
+.feat__box-list {
+  display: flex;
+  flex-basis: 100%;
+}
+.feat__icon-box {
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-background-color);
+}
+.feat__box-item {
+  width: 270px;
+}
+.feat__headline::before {
+  width: 70px;
+  height: 70px;
+}
+.feat__headline {
+  @include fonts(14px, 16px, $fw: 700);
+
+  margin-bottom: 10px;
+}
+.feat__description {
+  @include fonts(14px, 24px, $col: var(--secondary-text-color));
+}
+.feat__box-item:not(:first-child) {
+  margin-left: 30px;
+}
+// ------------------- Modification`s -------------------
+
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// }
+// .feat__box-item:nth-child(1) > .feat__headline::before {
+//   background-image: url("../../images/svg/feat-antenna.svg");
+// }
+// .feat__box-item:nth-child(2) > .feat__headline::before {
+//   background-image: url("../../images/svg/feat-clock.svg");
+// }
+// .feat__box-item:nth-child(3) > .feat__headline::before {
+//   background-image: url("../../images/svg/feat-diagram.svg");
+// }
+// .feat__box-item:nth-child(4) > .feat__headline::before {
+//   background-image: url("../../images/svg/feat-astronaut.svg");
+// }
+// ----------------- End of Modification`s -----------------

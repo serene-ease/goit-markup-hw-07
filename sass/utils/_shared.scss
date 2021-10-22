@@ -1,0 +1,6 @@
+.m-page-headlines {
+  @include fonts(36px, 42px, $col: var(--primary-text-color), $fw: 700);
+
+  text-align: center;
+  margin-bottom: 50px;
+}

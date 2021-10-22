@@ -1,0 +1,68 @@
+.header {
+  width: 100%;
+  height: 80px;
+
+  border-bottom: 1px solid #ececec;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute 0 0;
+}
+.nav {
+  @extend %plh-Flex;
+}
+.nav__pages-list,
+.nav__contacts-list {
+  display: flex;
+}
+.nav__contacts-list {
+  margin-left: auto;
+  justify-self: flex-end;
+}
+.nav__item1:not(:first-child),
+.nav__item2:not(:first-child) {
+  margin-left: 50px;
+}
+
+.nav__logo {
+  font-family: Raleway, sans-serif;
+  margin-right: 93px;
+  @include fonts(26px, 31px, 0.02em, var(--accent-color), 700);
+}
+.nav__span-logo {
+  color: black;
+}
+.nav__page {
+  @include fonts(16px, 14px, 0.02em, $fw: 500);
+}
+.nav__contact {
+  @include fonts(16px, 14px, 0.02em, var(--secondary-text-color), 500);
+}
+.nav__page:hover,
+.nav__page:focus,
+.nav__contact:hover,
+.nav__contact:focus {
+  color: var(--accent-color);
+}
+.nav__contact::before {
+  fill: aqua;
+  outline: 3px solid blue;
+
+  fill: currentcolor;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  margin-right: 8px;
+}
+.nav__contact:first-child::before {
+  background-image: url("../../images/svg/envelope.svg");
+  width: 16px;
+  height: 12px;
+}
+.nav__contact:nth-child(2)::before {
+  background-image: url("../../images/svg/smartphone.svg");
+  width: 10px;
+  height: 16px;
+}

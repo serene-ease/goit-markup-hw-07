@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--accent-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__main-box {
+  display: flex;
+}
+.footer__headline {
+  @include fonts(14px, 16px, $col: var(--third-text-color), $fw: 700);
+}
+.footer__second-box,
+.footer__third-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__second-box {
+  margin-left: 70px;
+}
+.footer__third-box {
+  margin-left: auto;
+  justify-self: flex-end;
+}
+.adress__link {
+  @include fonts(14px, 24px, $col: rgba(255, 255, 255, 0.6));
+  font-style: normal;
+}

@@ -1,0 +1,24 @@
+// @import "layout/module";
+// @import "pages/module";
+
+// @import "vendors/module";
+
+// @import "base/module";
+@import "./base/root";
+@import "./base/reset";
+@import "./base/container";
+
+// @import "utils/module";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/shared";
+
+// @import "components/module";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/button";
+@import "./components/features";
+@import "./components/work-dirrections";
+@import "./components/our-team";
+@import "./components/const-clients";
+@import "./components/footer";
