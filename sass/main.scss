@@ -12,12 +12,15 @@
 //                        @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./utils/shared";
+@import "./utils/svg-add";
 
 // @import "components/module";
 @import "./components/header";
 @import "./components/button";
+@import "./components/close_btn";
 @import "./components/footer";
-
+@import "./components/modal";
+@import "./components/backdrop";
 @import "./pages/main-page/hero";
 @import "./pages/main-page/features";
 @import "./pages/main-page/work-dirrections";

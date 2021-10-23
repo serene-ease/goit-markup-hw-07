@@ -58,7 +58,7 @@
     <section class="hero">
         <div class="container">
             <h1 class="hero__headline">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button">Заказать услугу</button>
+            <button type="button" class="button hero__btn">Заказать услугу</button>
         </div>
     </section>
     <section class="features">
@@ -215,13 +215,46 @@
                         <p class="footer__headline">Подпишитесь на рассылку</p>
                         <div>
                             <input type="email" name="email" id="form-f__email" class="form-f__email" placeholder="E-mail">
-                            <button type="button" class="button">Подписаться</button>
+                            <button type="button" class="button footer__btn">Подписаться</button>
                     </div>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
+        <div class="backdrop is-hidden">
+            <div class="modal data-modal-close">
+                <button class="close-btn" type="button"></button>
+        
+                <form class="n-user-form" action="" method="post" autocomplete="off">
+                    <p class="n-user-form__headline">Оставьте свои данные мы вам перезвоним</p>
+                    <div class="n-user-form__box">
+                        <input class="n-user-form__input effect" type="text" name="name" id="form-name" required>
+                        <label class="form__text-mark" for="form-name">Имя</label>
+                    </div>
+                    <div class="n-user-form__box">
+                        <input class="n-user-form__input effect" type="tel" name="tel" id="form-tel">
+                        <label class="form__text-mark" for="form-tel" required>Телефон</label>
+                    </div>
+                    <div class="n-user-form__box">
+                        <input class="n-user-form__input effect" type="email" name="email" id="form-email">
+                        <label class="form__text-mark" for="form-email">Почта</label>
+                    </div>
+                    <div class="n-user-form__box">
+                        <textarea class="n-user-form__input effect" name="form-comment" id="form-comment" rows="5"
+                            placeholder="Введите текст"></textarea>
+                        <label class="form__text-mark" for="form-comment">Комментарий</label>
+                    </div>
+                    <div class="m-form__license">
+                        <input class="m-form__confirm" name="check" type="checkbox" id="m-form-check">
+                        <label for="m-form-check" class="m-form__contr-props">Соглашаюсь с рассылкой и принимаю</label>
+                        <a class="contract-descr__link" href="">Условия договора</a></p>
+                    </div>
+                    <button type="submit" class="button form__btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
 </body>
 
 </html>

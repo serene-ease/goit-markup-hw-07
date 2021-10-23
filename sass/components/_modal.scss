@@ -1,0 +1,88 @@
+.modal {
+  width: 528px;
+  min-height: 600px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.n-user-form__headline {
+  @include fonts(20px, 23px, $fw: 700);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.n-user-form {
+  display: block;
+  padding: 40px;
+}
+.n-user-form__box {
+  position: relative;
+  margin-bottom: 28px;
+}
+.n-user-form__input {
+  color: var(--primary-text-color);
+  padding-left: 42px;
+
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+#form-comment {
+  min-height: 120px;
+  padding: 12px 16px;
+  resize: none;
+}
+.form__text-mark {
+  @include fonts(12px, 14px, 0.01em, var(--secondary-text-color));
+  position: absolute;
+  left: 0px;
+  top: -18px;
+}
+.m-form__license {
+  display: flex;
+  align-items: center;
+  //   justify-content: center;
+  //   justify-items: center;
+}
+.contract-descr__link {
+  @include fonts(14px, 24px, $col: var(--accent-color));
+  text-decoration: none;
+  text-decoration-line: underline;
+}
+.m-form__confirm {
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+}
+.m-form__contr-props {
+  @include fonts(14px, 24px, $col: --secondary-text-color);
+  margin-bottom: 30px;
+}
+.m-form__contr-props::before {
+  content: "";
+
+  width: 16px;
+  height: 15px;
+
+  display: inline-block;
+
+  background-image: url(../../images/svg/form-unchecked-box.svg);
+  border: #212121 solid 2px;
+  border-radius: 2px;
+  background-origin: border-box;
+
+  margin-right: 8px;
+}
+.m-form__confirm:checked + .m-form__contr-props::before {
+  content: "";
+
+  background-image: url("../../images/svg/form-checked-box.svg");
+  background-color: var(--accent-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+}

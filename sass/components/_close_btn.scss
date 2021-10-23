@@ -1,0 +1,25 @@
+.close-btn {
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  color: #000;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.close-btn {
+  fill: currentColor;
+}
+.close-btn:hover,
+.close-btn:focus {
+  color: var(--accent-color);
+  outline: var(--accent-color);
+}

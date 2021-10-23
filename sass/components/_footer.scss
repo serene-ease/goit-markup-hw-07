@@ -60,19 +60,3 @@
   justify-items: center;
   justify-content: center;
 }
-.form__join .button::after {
-  content: url("../../images/svg/telegram.svg");
-
-  background-image: url("../../images/svg/telegram.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-
-  fill: currentColor;
-  outline: cyan solid 2px;
-
-  width: 24px;
-  height: 24px;
-
-  margin-left: 10px;
-}
