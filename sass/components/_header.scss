@@ -42,18 +42,9 @@
 }
 .nav__contact {
   @include fonts(16px, 14px, 0.02em, var(--secondary-text-color), 500);
+  display: inline-flex;
 }
 
-// .nav__contact::before {
-//   fill: aqua;
-//   outline: 3px solid blue;
-
-//   fill: currentcolor;
-//   background-repeat: no-repeat;
-//   background-size: contain;
-
-//   margin-right: 8px;
-// }
 .nav__contact:first-child::before {
   background-image: url("../../images/svg/envelope.svg");
   width: 16px;
