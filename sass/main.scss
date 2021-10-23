@@ -12,7 +12,6 @@
 //                        @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./utils/shared";
-@import "./utils/svg-add";
 
 // @import "components/module";
 @import "./components/header";
@@ -28,3 +27,7 @@
 @import "./pages/main-page/const-clients";
 
 @import "./pages/portfolio-page/portfolio";
+
+// -----------------------------------
+@import "./utils/svg-body";
+@import "./utils/svg-add";

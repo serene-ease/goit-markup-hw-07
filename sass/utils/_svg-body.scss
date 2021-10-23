@@ -1,0 +1,36 @@
+.nav__item2:nth-child(1),
+.nav__item2:nth-child(2),
+.footer__btn,
+.feat__box-item:nth-child(1) > .feat__headline,
+.feat__box-item:nth-child(2) > .feat__headline,
+.feat__box-item:nth-child(3) > .feat__headline,
+.feat__box-item:nth-child(4) > .feat__headline,
+.soc-box_item:nth-child(1) > .soc-box__link,
+.soc-box_item:nth-child(2) > .soc-box__link,
+.soc-box_item:nth-child(3) > .soc-box__link,
+.soc-box_item:nth-child(4) > .soc-box__link,
+.clients__item:nth-child(1) > .client__link,
+.clients__item:nth-child(2) > .client__link,
+.clients__item:nth-child(3) > .client__link,
+.clients__item:nth-child(4) > .client__link,
+.clients__item:nth-child(5) > .client__link,
+.clients__item:nth-child(6) > .client__link,
+.n-user-form__box:nth-child(1) > .form__text-mark,
+.n-user-form__box:nth-child(2) > .form__text-mark,
+.n-user-form__box:nth-child(3) > .form__text-mark,
+.close-btn {
+  display: flex;
+  position: relative;
+}
+.n-user-form__box:nth-child(1) > .form__text-mark,
+.n-user-form__box:nth-child(2) > .form__text-mark,
+.n-user-form__box:nth-child(3) > .form__text-mark {
+  top: -58px;
+  // 40 + 4 + 14
+}
+.close-btn {
+  // left: calc(flex-basis - 8px);
+  // right: 8px;
+  left: 502px;
+  top: 8px;
+}

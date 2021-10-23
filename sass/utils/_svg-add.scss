@@ -11,39 +11,71 @@
 
 .nav__item2:nth-child(1):before,
 .nav__item2:nth-child(2):before,
-.footer__btn::after,
-.feat__headline::before,
-.feat__headline:nth-child(1)::before,
-.feat__headline:nth-child(2)::before,
-.feat__headline:nth-child(3)::before,
-.feat__headline:nth-child(4)::before,
-.soc-box__link::before,
-.soc-box__link:nth-child(1):before,
-.soc-box__link:nth-child(2):before,
-.soc-box__link:nth-child(3):before,
-.soc-box__link:nth-child(4):before,
-.client__link::before,
-.client__link:nth-child(1)::before,
-.client__link:nth-child(2)::before,
-.client__link:nth-child(3)::before,
-.client__link:nth-child(4)::before,
-.client__link:nth-child(5)::before,
-.client__link:nth-child(6)::before,
-.form__text-mark::after,
-.form__text-mark:nth-child(1)::after,
-.form__text-mark:nth-child(2)::after,
-.form__text-mark:nth-child(3)::after,
+.footer__btn:after,
+.feat__box-item:nth-child(1) > .feat__headline::before,
+.feat__box-item:nth-child(2) > .feat__headline::before,
+.feat__box-item:nth-child(3) > .feat__headline::before,
+.feat__box-item:nth-child(4) > .feat__headline::before,
+.soc-box_item:nth-child(1) > .soc-box__link:before,
+.soc-box_item:nth-child(2) > .soc-box__link:before,
+.soc-box_item:nth-child(3) > .soc-box__link:before,
+.soc-box_item:nth-child(4) > .soc-box__link:before,
+.clients__item:nth-child(1) > .client__link::before,
+.clients__item:nth-child(2) > .client__link::before,
+.clients__item:nth-child(3) > .client__link::before,
+.clients__item:nth-child(4) > .client__link::before,
+.clients__item:nth-child(5) > .client__link::before,
+.clients__item:nth-child(6) > .client__link::before,
+.m-form__license:nth-child(1) > .form__text-mark::after,
+.m-form__license:nth-child(2) > .form__text-mark::after,
+.m-form__license:nth-child(3) > .form__text-mark::after,
 .close-btn::after {
   content: "";
 
   outline: purple solid 3px;
+  background-color: cyan;
 
   display: block;
-  box-sizing: border-box;
+  //   box-sizing: border-box;
+  background-origin: border-box;
 
   background-size: contain;
   background-repeat: no-repeat;
   fill: currentColor;
+}
+.feat__box-item:nth-child(1) > .feat__headline::before,
+.feat__box-item:nth-child(2) > .feat__headline::before,
+.feat__box-item:nth-child(3) > .feat__headline::before,
+.feat__box-item:nth-child(4) > .feat__headline::before {
+  position: absolute;
+  top: -127px;
+  left: 100px;
+}
+.soc-box_item:nth-child(1) > .soc-box__link:before,
+.soc-box_item:nth-child(2) > .soc-box__link:before,
+.soc-box_item:nth-child(3) > .soc-box__link:before,
+.soc-box_item:nth-child(4) > .soc-box__link:before {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  // 44/2 - 20/2
+}
+.clients__item:nth-child(1) > .client__link::before,
+.clients__item:nth-child(2) > .client__link::before,
+.clients__item:nth-child(3) > .client__link::before,
+.clients__item:nth-child(4) > .client__link::before,
+.clients__item:nth-child(5) > .client__link::before,
+.clients__item:nth-child(6) > .client__link::before {
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  // 92/2 - 60/2  = 16
+  // 170/2 - 106/2 = 32
+}
+.m-form__license:nth-child(1) > .form__text-mark::after,
+.m-form__license:nth-child(2) > .form__text-mark::after,
+.m-form__license:nth-child(3) > .form__text-mark::after {
+  position: absolute;
 }
 
 .nav__item2:nth-child(1):before {
@@ -73,67 +105,67 @@
   width: 70px;
   height: 70px;
 }
-.feat__headline:nth-child(1)::before {
+.feat__box-item:nth-child(1) > .feat__headline::before {
   background-image: url("../../images/svg/feats/antenna.svg");
 }
-.feat__headline:nth-child(2)::before {
+.feat__box-item:nth-child(2) > .feat__headline::before {
   background-image: url("../../images/svg/feats/clock.svg");
 }
-.feat__headline:nth-child(3)::before {
+.feat__box-item:nth-child(3) > .feat__headline::before {
   background-image: url("../../images/svg/feats/diagram.svg");
 }
-.feat__headline:nth-child(4)::before {
+.feat__box-item:nth-child(4) > .feat__headline::before {
   background-image: url("../../images/svg/feats/astronaut.svg");
 }
 .soc-box__link::before {
   width: 20px;
   height: 20px;
 }
-.soc-box__link:nth-child(1):before {
+.soc-box_item:nth-child(1) > .soc-box__link:before {
   background-image: url("../../images/svg/social-links/instagram.svg");
 }
-.soc-box__link:nth-child(2):before {
+.soc-box_item:nth-child(2) > .soc-box__link:before {
   background-image: url("../../images/svg/social-links/twitter.svg");
 }
-.soc-box__link:nth-child(3):before {
+.soc-box_item:nth-child(3) > .soc-box__link:before {
   background-image: url("../../images/svg/social-links/facebook.svg");
 }
-.soc-box__link:nth-child(4):before {
+.soc-box_item:nth-child(4) > .soc-box__link:before {
   background-image: url("../../images/svg/social-links/linkedin.svg");
 }
 .client__link::before {
   width: 106px;
   height: 60px;
 }
-.client__link:nth-child(1)::before {
+.clients__item:nth-child(1) > .client__link::before {
   background-image: url("../../images/svg/clients/Logoclient-1.svg");
 }
-.client__link:nth-child(2)::before {
+.clients__item:nth-child(2) > .client__link::before {
   background-image: url("../../images/svg/clients/Logoclient-2.svg");
 }
-.client__link:nth-child(3)::before {
+.clients__item:nth-child(3) > .client__link::before {
   background-image: url("../../images/svg/clients/Logoclient-3.svg");
 }
-.client__link:nth-child(4)::before {
+.clients__item:nth-child(4) > .client__link::before {
   background-image: url("../../images/svg/clients/Logoclient-4.svg");
 }
-.client__link:nth-child(5)::before {
+.clients__item:nth-child(5) > .client__link::before {
   background-image: url("../../images/svg/clients/Logoclient-5.svg");
 }
-.client__link:nth-child(6)::before {
+.clients__item:nth-child(6) > .client__link::before {
   background-image: url("../../images/svg/clients/Logoclient-6.svg");
 }
 .form__text-mark::after {
   width: 18px;
   height: 18px;
 }
-.form__text-mark:nth-child(1)::after {
+.m-form__license:nth-child(1) > .form__text-mark::after {
   background-image: url("../../images/svg/modal/person.svg");
 }
-.form__text-mark:nth-child(2)::after {
+.m-form__license:nth-child(2) > .form__text-mark::after {
   background-image: url("../../images/svg/modal/phone.svg");
 }
-.form__text-mark:nth-child(3)::after {
+.m-form__license:nth-child(3) > .form__text-mark::after {
   background-image: url("../../images/svg/modal/mail.svg");
 }
 .close-btn {

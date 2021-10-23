@@ -44,14 +44,15 @@
 }
 .m-form__license {
   display: flex;
-  align-items: center;
-  //   justify-content: center;
-  //   justify-items: center;
+  // align-items: center;
+  // justify-content: center;
+  // justify-items: center;
 }
 .contract-descr__link {
   @include fonts(14px, 24px, $col: var(--accent-color));
   text-decoration: none;
   text-decoration-line: underline;
+  margin-left: 7px;
 }
 .m-form__confirm {
   appearance: none;
@@ -85,4 +86,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
+}
+.form__btn {
+  display: block;
+  margin: auto;
 }
