@@ -32,6 +32,9 @@
   font-style: normal;
   text-decoration: none;
 }
+.adress__item:first-child > .adress__link {
+  color: var(--third-text-color);
+}
 .adress__item:not(:last-child) {
   margin-top: 9px;
 }
@@ -59,4 +62,7 @@
   align-items: center;
   justify-items: center;
   justify-content: center;
+}
+.footer .soc-box__link {
+  background-color: rgba(255, 255, 255, 0.1);
 }

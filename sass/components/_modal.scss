@@ -71,7 +71,6 @@
 
   display: inline-block;
 
-  background-image: url(../../images/svg/form-unchecked-box.svg);
   border: #212121 solid 2px;
   border-radius: 2px;
   background-origin: border-box;
@@ -81,7 +80,7 @@
 .m-form__confirm:checked + .m-form__contr-props::before {
   content: "";
 
-  background-image: url("../../images/svg/form-checked-box.svg");
+  background-image: url("../images/svg/modl/form-unchecked-box.svg");
   background-color: var(--accent-color);
   background-size: contain;
   background-repeat: no-repeat;

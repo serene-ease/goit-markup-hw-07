@@ -37,7 +37,7 @@
   color: black;
 }
 .nav__page {
-  @include fonts(16px, 14px, 0.02em, $fw: 500);
+  @include fonts(14px, 16px, 0.02em, $fw: 500);
   position: relative;
 }
 .nav__contact {

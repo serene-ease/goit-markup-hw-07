@@ -1,0 +1,68 @@
+.nav__item2:nth-child(1) .nav__contact:hover:before,
+.nav__item2:nth-child(1) .nav__contact:focus:before {
+  background-image: url("../images/svg/svg-accent/envelope.svg");
+}
+.nav__item2:nth-child(2) .nav__contact:hover:before,
+.nav__item2:nth-child(2) .nav__contact:focus:before {
+  background-image: url("../images/svg/svg-accent/smartphone.svg");
+}
+.footer__btn::after {
+  background-image: url("../images/svg/svg-accent/telegram.svg");
+}
+.soc-box_item:nth-child(1) > .soc-box__link:hover:before,
+.soc-box_item:nth-child(1) > .soc-box__link:focus:before {
+  background-image: url("../images/svg/svg-accent/social-links/instagram.svg");
+}
+.soc-box_item:nth-child(2) > .soc-box__link:hover:before,
+.soc-box_item:nth-child(2) > .soc-box__link:focus:before {
+  background-image: url("../images/svg/svg-accent/social-links/twitter.svg");
+}
+.soc-box_item:nth-child(3) > .soc-box__link:hover:before,
+.soc-box_item:nth-child(3) > .soc-box__link:focus:before {
+  background-image: url("../images/svg/svg-accent/social-links/facebook.svg");
+}
+.soc-box_item:nth-child(4) > .soc-box__link:hover:before,
+.soc-box_item:nth-child(4) > .soc-box__link:focus:before {
+  background-image: url("../images/svg/svg-accent/social-links/linkedin.svg");
+}
+.clients__item:nth-child(1) > .client__link:hover:before,
+.clients__item:nth-child(1) > .client__link:focus:before {
+  background-image: url("../images/svg/svg-accent/clients/Logoclient-1.svg");
+}
+.clients__item:nth-child(2) > .client__link:hover:before,
+.clients__item:nth-child(2) > .client__link:focus:before {
+  background-image: url("../images/svg/svg-accent/clients/Logoclient-2.svg");
+}
+.clients__item:nth-child(3) > .client__link:hover:before,
+.clients__item:nth-child(3) > .client__link:focus:before {
+  background-image: url("../images/svg/svg-accent/clients/Logoclient-3.svg");
+}
+.clients__item:nth-child(4) > .client__link:hover:before,
+.clients__item:nth-child(4) > .client__link:focus:before {
+  background-image: url("../images/svg/svg-accent/clients/Logoclient-4.svg");
+}
+.clients__item:nth-child(5) > .client__link:hover:before,
+.clients__item:nth-child(5) > .client__link:focus:before {
+  background-image: url("../images/svg/svg-accent/clients/Logoclient-5.svg");
+}
+.clients__item:nth-child(6) > .client__link:hover:before,
+.clients__item:nth-child(6) > .client__link:focus:before {
+  background-image: url("../images/svg/svg-accent/clients/Logoclient-6.svg");
+}
+
+.m-form__license:nth-child(1) > .n-user-form__input:hover:after,
+.m-form__license:nth-child(1) > .n-user-form__input:focus:after {
+  background-image: url("../images/svg/svg-accent/modal/person.svg");
+}
+.m-form__license:nth-child(2) > .n-user-form__input:hover:after,
+.m-form__license:nth-child(2) > .n-user-form__input:focus:after {
+  background-image: url("../images/svg/svg-accent/modal/phone.svg");
+}
+.m-form__license:nth-child(3) > .n-user-form__input:hover:after,
+.m-form__license:nth-child(3) > .n-user-form__input:focus:after {
+  background-image: url("../images/svg/svg-accent/modal/mail.svg");
+}
+.close-btn:hover:after,
+.close-btn:focus:after {
+  background-image: url("../images/svg/svg-accent/modal/close.svg");
+}

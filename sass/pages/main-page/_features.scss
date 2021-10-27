@@ -23,6 +23,7 @@
 }
 .feat__headline {
   @include fonts(14px, 16px, $fw: 700);
+  text-transform: uppercase;
 
   margin-bottom: 10px;
 }
