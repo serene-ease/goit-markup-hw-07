@@ -50,17 +50,36 @@
   background-image: url("../images/svg/svg-accent/clients/Logoclient-6.svg");
 }
 
-.m-form__license:nth-child(1) > .n-user-form__input:hover:after,
-.m-form__license:nth-child(1) > .n-user-form__input:focus:after {
+.m-form__license:nth-child(2)
+  > .form__text-mark:hover
+  + .form__text-mark:after {
   background-image: url("../images/svg/svg-accent/modal/person.svg");
+  z-index: 2;
 }
-.m-form__license:nth-child(2) > .n-user-form__input:hover:after,
-.m-form__license:nth-child(2) > .n-user-form__input:focus:after {
+.m-form__license:nth-child(2)
+  > .form__text-mark:focus
+  + .form__text-mark:after {
+  background-image: url("../images/svg/svg-accent/modal/person.svg");
+  z-index: 2;
+}
+.m-form__license:nth-child(3)
+  > .form__text-mark:hover
+  + .form__text-mark:after {
   background-image: url("../images/svg/svg-accent/modal/phone.svg");
+  z-index: 2;
 }
-.m-form__license:nth-child(3) > .n-user-form__input:hover:after,
-.m-form__license:nth-child(3) > .n-user-form__input:focus:after {
+.m-form__license:nth-child(3)
+  > .form__text-mark:focus
+  + .form__text-mark:after {
+  background-image: url("../images/svg/svg-accent/modal/phone.svg");
+  z-index: 2;
+}
+.m-form__license:nth-child(4) > .form__text-mark + .form__text-mark:hover:after,
+.m-form__license:nth-child(4)
+  > .form__text-mark
+  + .form__text-mark:focus:after {
   background-image: url("../images/svg/svg-accent/modal/mail.svg");
+  z-index: 2;
 }
 .close-btn:hover:after,
 .close-btn:focus:after {

@@ -4,7 +4,7 @@
 .feat__headline::before,
 .soc-box__link:before,
 .client__link::before,
-.n-user-form__input::after {
+.form__text-mark::after {
   content: "";
 
   background-origin: border-box;
@@ -36,12 +36,11 @@
   position: absolute;
   left: 4px;
 }
-.n-user-form__input::after {
+.form__text-mark::after {
   position: absolute;
-  top: 0px;
-  left: -12px;
-  z-index: 50;
-  outline: magenta solid 3px;
+  top: 29px;
+  left: 12px;
+  z-index: 1;
 }
 // ------------------------------Image Input----------------------------
 .nav__item2:nth-child(1) .nav__contact:before {
@@ -60,7 +59,7 @@
   margin-right: 10px;
 }
 .footer__btn::after {
-  background-image: url("../images/svg/telegram.svg");
+  background-image: url("../images/svg/send.svg");
   width: 24px;
   height: 24px;
 
@@ -133,18 +132,18 @@
 .clients__item:nth-child(6) > .client__link::before {
   background-image: url("../images/svg/clients/Logoclient-6.svg");
 }
-.n-user-form__input::after {
+.form__text-mark::after {
   width: 18px;
   height: 18px;
 }
-.n-user-form__box:nth-child(1) > .n-user-form__input::after {
+.n-user-form__box:nth-child(2) > .form__text-mark::after {
   background-image: url("../images/svg/modal/person.svg");
 }
-.n-user-form__box:nth-child(2) > .n-user-form__input::after {
+.n-user-form__box:nth-child(3) > .form__text-mark::after {
   background-image: url("../images/svg/modal/phone.svg");
 }
-.n-user-form__box:nth-child(3) > .n-user-form__input::after {
-  background-image: url("../images/svg/modal/mail.svg");
+.n-user-form__box:nth-child(4) > .form__text-mark::after {
+  background-image: url("../images/svg/modal/email.svg");
 }
 
 .close-btn:after {

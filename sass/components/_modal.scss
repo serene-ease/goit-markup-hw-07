@@ -40,7 +40,10 @@
   @include fonts(12px, 14px, 0.01em, var(--secondary-text-color));
   position: absolute;
   left: 0px;
-  top: -18px;
+  top: -58px;
+}
+textarea + .form__text-mark {
+  top: -142px;
 }
 .m-form__license {
   display: flex;
@@ -80,13 +83,13 @@
 .m-form__confirm:checked + .m-form__contr-props::before {
   content: "";
 
-  background-image: url("../images/svg/modl/form-unchecked-box.svg");
-  background-color: var(--accent-color);
+  background-image: url("../images/svg/modal/check.svg");
+  // background-color: var(--accent-color);
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
 }
 .form__btn {
   display: block;
-  margin: auto;
+  margin: 0 auto;
 }
