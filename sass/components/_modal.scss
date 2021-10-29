@@ -65,29 +65,29 @@ textarea + .form__text-mark {
 .m-form__contr-props {
   @include fonts(14px, 24px, $col: --secondary-text-color);
   margin-bottom: 30px;
-}
-.m-form__contr-props::before {
-  content: "";
+  &::before {
+    content: "";
 
-  width: 16px;
-  height: 15px;
+    width: 16px;
+    height: 15px;
 
-  display: inline-block;
+    display: inline-block;
 
-  border: #212121 solid 2px;
-  border-radius: 2px;
-  background-origin: border-box;
+    border: #212121 solid 2px;
+    border-radius: 2px;
+    background-origin: border-box;
 
-  margin-right: 8px;
-}
-.m-form__confirm:checked + .m-form__contr-props::before {
-  content: "";
+    margin-right: 8px;
+  }
+  .m-form__confirm:checked + &::before {
+    content: "";
 
-  background-image: url("../images/svg/modal/check.svg");
-  // background-color: var(--accent-color);
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: none;
+    background-image: url("../images/svg/modal/check.svg");
+    // background-color: var(--accent-color);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+  }
 }
 .form__btn {
   display: block;

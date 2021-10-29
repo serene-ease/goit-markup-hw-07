@@ -14,12 +14,13 @@
   position: absolute;
   top: 8px;
   right: 8px;
-}
-.close-btn {
-  fill: currentColor;
-}
-.close-btn:hover,
-.close-btn:focus {
-  color: var(--accent-color);
-  outline: var(--accent-color);
+
+  & {
+    fill: currentColor;
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: var(--accent-color);
+  }
 }
